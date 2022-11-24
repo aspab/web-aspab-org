@@ -1,0 +1,6 @@
+body {
+	@apply h-screen;
+	@apply grid;
+	@apply grid-rows-3;
+	grid-template-rows: auto 1fr auto;
+}

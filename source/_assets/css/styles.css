@@ -1,0 +1,65 @@
+@layer base {
+	h1 {
+		@apply text-3xl;
+		@apply text-cyan-800;
+		@apply font-extrabold;
+		@apply pt-2
+	}
+	h2 {
+		@apply text-2xl;
+		@apply text-cyan-800;
+		@apply font-bold;
+	}
+	h3 {
+		@apply text-xl;
+		@apply text-cyan-800;
+		@apply font-bold;
+	}
+}
+
+.join-us {
+	@apply py-2;
+	@apply my-3;
+	@apply mx-auto;
+	@apply w-1/2;
+	@apply block;
+	@apply rounded-full;
+	@apply bg-gold;
+	@apply text-white;
+	@apply text-center;
+	@apply font-bold;
+	@apply text-2xl;
+	@apply no-underline;
+	@apply hover:text-current;
+}
+
+a {
+	@apply font-semibold;
+	@apply underline;
+	@apply decoration-dotted;
+	@apply hover:text-cyan-800;
+}
+
+p {
+	@apply mt-2;
+	@apply mb-4;
+}
+
+ul, ol {
+	@apply list-inside;
+	/*    @apply px-8;*/
+	/*    @apply -indent-8;*/
+}
+
+ul, ol li {
+	@apply mt-2;
+	@apply mb-4;
+}
+
+ul {
+	@apply list-disc;
+}
+
+ol {
+	@apply list-decimal;
+}

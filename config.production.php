@@ -2,5 +2,5 @@
 
 return [
     'production' => true,
-    'baseUrl' => 'aspab.github.io',
+    'baseUrl' => 'aspab.github.io/web-aspab-org',
 ];

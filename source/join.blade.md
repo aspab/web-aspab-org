@@ -20,12 +20,12 @@ Membership Forms
 
 Membership is based on the financial year (1 July – 30 June) and is renewed annually on 1 July. To join, please fill out one of the forms below and email to relevant chapter membership managers, listed below. Renewing members only need to complete a form if their contact details have changed.
 
-<x-word-doc href="/assets/files/ASPAB_membership_renewal_AUS.docx"> 
+<x-word-doc href="{{ trim($page->baseUrl, '/') }}/assets/files/ASPAB_membership_renewal_AUS.docx"> 
 	<x-slot:title>ASPAB Australia Membership Renewal</x-slot>
 	Please email to Cecilia Biancacci (<x-email>c.biancacci@deakin.edu.au</x-email>)
 </x-word-doc>
 
-<x-word-doc href="/assets/files/ASPAB_membership_renewal_AUS.docx"> 
+<x-word-doc href="{{ trim($page->baseUrl, '/') }}/assets/files/ASPAB_membership_renewal_AUS.docx"> 
 	<x-slot:title>ASPAB New Zealand Membership Renewal</x-slot>
 	Please email to Daniel Pritchard (<x-email>daniel.pritchard@otago.ac.nz</x-email>)
 </x-word-doc>

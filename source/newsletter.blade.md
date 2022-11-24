@@ -1,4 +1,9 @@
-Newsletter
+---
+extends: _layouts.main
+section: body
+---
+
+# Newsletter
 Current Issue
 
 Newsletter 2022-1 Cover

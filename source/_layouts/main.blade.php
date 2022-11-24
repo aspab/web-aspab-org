@@ -6,27 +6,27 @@
         <link rel="canonical" href="{{ $page->getUrl() }}">
         <meta name="description" content="{{ $page->description }}">
         <title>{{ $page->getTitle() }}</title>
-        <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
-        <script defer src="{{ mix('js/main.js', 'assets/build') }}"></script>
+        <link rel="stylesheet" href="{{ trim($page->baseUrl, '/') }}{{ mix('css/main.css', 'assets/build') }}">
+        <script defer src="{{ trim($page->baseUrl, '/') }}{{ mix('js/main.js', 'assets/build') }}"></script>
     </head>
     <body class="font-sans antialiased">
         <div class="bg-cyan-500 text-white">
             <div class="container mx-auto flex flex-col md:flex-row items-center justify-between md:py-6 md:px-2">
                 <div class="flex flex-row items-center p-2 md:p-0">
-                    <a href="/">
-                    <img src="/assets/images/ASPAB_logo.png" class="w-12 md:w-20">
+                    <a href="{{ trim($page->baseUrl, '/') }}/">
+                    <img src="{{ trim($page->baseUrl, '/') }}/assets/images/ASPAB_logo.png" class="w-12 md:w-20">
                     </a>
-                    <a href="/" class="no-underline hover:text-current ">
+                    <a href="{{ trim($page->baseUrl, '/') }}/" class="no-underline hover:text-current ">
                     <p class="px-2 text-slate-800 font-bold">Australasian Society for Phycology and Aquatic Botany</p>
                     </a>
                 </div>
                 <nav id="nav-menu" class="flex items-start text-xs pb-2 md:pb-0">
                     <!-- <a href="/" class="border-2 border-black rounded-md mx-1 px-1 py-1 bg-cyan-800">Home</a> -->
-                    <a href="/join" class="border-2 border-black rounded-md mx-1 px-1 py-1 bg-cyan-800 hover:border-gold no-underline hover:text-current">Join</a>
-                    <a href="/about" class="border-2 border-black rounded-md mx-1 px-1 py-1 bg-cyan-800 hover:border-gold no-underline hover:text-current ">About</a>
-                    <a href="/newsletter" class="border-2 border-black rounded-md mx-1 px-1 py-1 bg-cyan-800 hover:border-gold no-underline hover:text-current ">Newsletter</a>
-                    <a href="/conference" class="border-2 border-black rounded-md mx-1 px-1 py-1 bg-cyan-800 hover:border-gold no-underline hover:text-current ">Conference</a>
-                    <a href="/funding" class="border-2 border-black rounded-md mx-1 px-1 py-1 bg-cyan-800 hover:border-gold no-underline hover:text-current">Funding</a>
+                    <a href="{{ trim($page->baseUrl, '/') }}/join" class="border-2 border-black rounded-md mx-1 px-1 py-1 bg-cyan-800 hover:border-gold no-underline hover:text-current">Join</a>
+                    <a href="{{ trim($page->baseUrl, '/') }}/about" class="border-2 border-black rounded-md mx-1 px-1 py-1 bg-cyan-800 hover:border-gold no-underline hover:text-current ">About</a>
+                    <a href="{{ trim($page->baseUrl, '/') }}/newsletter" class="border-2 border-black rounded-md mx-1 px-1 py-1 bg-cyan-800 hover:border-gold no-underline hover:text-current ">Newsletter</a>
+                    <a href="{{ trim($page->baseUrl, '/') }}/conference" class="border-2 border-black rounded-md mx-1 px-1 py-1 bg-cyan-800 hover:border-gold no-underline hover:text-current ">Conference</a>
+                    <a href="{{ trim($page->baseUrl, '/') }}/funding" class="border-2 border-black rounded-md mx-1 px-1 py-1 bg-cyan-800 hover:border-gold no-underline hover:text-current">Funding</a>
                 </nav>
             </div>
         </div>

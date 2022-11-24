@@ -45,11 +45,11 @@ Proof that travel was actually undertaken (e.g. copies of boarding passes etc) i
 
 Recipients of awards are required to provide a short description of their travel (photos, highlights, review of work) for the ASPAB newsletter/blog. Send to the newsletter editors within 6 weeks of completion of your travel.
 
-<x-word-doc href="/assets/files/JJSTG_Application.docx"> 
+<x-word-doc href="{{ trim($page->baseUrl, '/') }}/assets/files/JJSTG_Application.docx"> 
 	<x-slot:title>Application Form</x-slot>
 </x-word-doc>
 
-<x-word-doc href="/assets/files/JJSTG_Supervisor_Letter.docx"> 
+<x-word-doc href="{{ trim($page->baseUrl, '/') }}/assets/files/JJSTG_Supervisor_Letter.docx"> 
 	<x-slot:title>Supervisor Recommendation Form</x-slot>
 </x-word-doc>
 

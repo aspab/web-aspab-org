@@ -7,3 +7,4 @@ Rebuild (2022-23). The plan:
 # ToDo
 - Migrate newsletter content
 - Finish styling / migrating exisiting (history) pages
+- Sort out the `{{ trim($page->baseUrl, '/') }}`

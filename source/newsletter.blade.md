@@ -2,28 +2,24 @@
 extends: _layouts.main
 section: body
 ---
-
+@php
+$nlttrs = [
+	["file" => "Newsletter_2022-1"],
+	["file" => "Newsletter_2021-2"],
+	["file" => "Newsletter_2021-1"],
+	["file" => "Newsletter_2020-2"],
+	["file" => "Newsletter_2020-1"],
+];
+$current = array_shift($nlttrs);
+@endphp
 # Newsletter
-Current Issue
 
-Newsletter 2022-1 Cover
+## Current Edition
+<x-newsletter file="{{ $current['file'] }}" current></x-newsletter>
 
-Newsletter 2022-1
-
-Previous Issues
-
-Newsletter 2021-2 Cover
-
-Newsletter 2021-2
-
-Newsletter 2021-1 Cover
-
-Newsletter 2021-1
-
-Newsletter 2020-2 Cover
-
-Newsletter 2020-2
-
-Newsletter 2020-1 Cover
-
-Newsletter 2020-1
+## Previous Editions
+<div class="flex">
+@foreach ($nlttrs as $nlttr)
+<x-newsletter file="{{ $nlttr['file'] }}"></x-newsletter>
+@endforeach
+</div>

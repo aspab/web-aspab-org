@@ -13,4 +13,4 @@ Formally established in May 1980, ASPAB aims to promote, develop and assist the 
 
 We draw members mainly from Australia and New Zealand, but welcome anyone who has an interest in the biology of photosynthetic aquatic organisms in this part of the world. ASPAB members work on aquatic organisms from microalgae to macroalgae, and from freshwater to marine environments. More…
 
-<a href="{{ trim($page->baseUrl, '/') }}/join" role="button" class="join-us">Join Us</a>
+<a href="{{ trim($page->baseUrl, '/') }}/join" role="button" class="join-us aspab-button hover:border-black">Join Us</a>

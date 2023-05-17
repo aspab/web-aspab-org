@@ -14,7 +14,10 @@ module.exports = {
       white: colors.white,
       gray: colors.gray,
       cyan: colors.cyan,
-      gold: '#d4a006'
+      'aspab-blue': '#406b81',
+      'aspab-blue-gray': '#cfdadf',
+      'aspab-green': '#2f5051',
+      'aspab-highlight': '#612b10'
     }
   },
   plugins: [],

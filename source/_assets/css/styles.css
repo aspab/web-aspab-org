@@ -1,43 +1,52 @@
 @layer base {
 	h1 {
 		@apply text-3xl;
-		@apply text-cyan-800;
+		@apply text-aspab-blue;
 		@apply font-extrabold;
 		@apply pt-2
 	}
 	h2 {
 		@apply text-2xl;
-		@apply text-cyan-800;
+		@apply text-aspab-blue;
 		@apply font-bold;
 	}
 	h3 {
 		@apply text-xl;
-		@apply text-cyan-800;
+		@apply text-aspab-blue;
 		@apply font-bold;
 	}
 }
 
+.aspab-button {
+	@apply border;
+	@apply border-black; 
+	@apply rounded-lg;
+	@apply py-1;
+	@apply bg-aspab-highlight; 
+	@apply hover:border-white;
+	@apply no-underline;
+	@apply text-white;
+	@apply hover:text-white;
+}
+
 .join-us {
-	@apply py-2;
 	@apply my-3;
 	@apply mx-auto;
-	@apply w-1/2;
+	@apply w-full;
+	@apply md:w-1/2;
+	@apply lg:w-1/4;
 	@apply block;
-	@apply rounded-full;
-	@apply bg-gold;
 	@apply text-white;
 	@apply text-center;
 	@apply font-bold;
 	@apply text-2xl;
-	@apply no-underline;
-	@apply hover:text-current;
 }
 
 a {
 	@apply font-semibold;
 	@apply underline;
 	@apply decoration-dotted;
-	@apply hover:text-cyan-800;
+	@apply hover:text-aspab-blue;
 }
 
 p {

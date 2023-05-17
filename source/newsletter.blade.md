@@ -15,11 +15,15 @@ $current = array_shift($nlttrs);
 # Newsletter
 
 ## Current Edition
-<x-newsletter file="{{ $current['file'] }}" current></x-newsletter>
+<x-newsletter 
+	href="{{ trim($page->baseUrl, '/') . '/assets/files/newsletters/' . $current['file'] . '.pdf' }}" 
+	img="{{ trim($page->baseUrl, '/') . '/assets/files/newsletters/' . $current['file'] . '_cover.png' }}" current></x-newsletter>
 
 ## Previous Editions
 <div class="flex">
 @foreach ($nlttrs as $nlttr)
-<x-newsletter file="{{ $nlttr['file'] }}"></x-newsletter>
+<x-newsletter 
+	href="{{ trim($page->baseUrl, '/') . '/assets/files/newsletters/' . $nlttr['file'] . '.pdf' }}" 
+	img="{{ trim($page->baseUrl, '/') . '/assets/files/newsletters/' . $nlttr['file'] . '_cover.png' }}"></x-newsletter>
 @endforeach
 </div>

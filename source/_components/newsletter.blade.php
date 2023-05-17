@@ -1,9 +1,5 @@
-@props(['file', 'current' => false])
-@php
-	$img_src = trim($page->baseUrl, '/') . '/assets/files/newsletters/' . $file . '_cover.png';
-	$file_src = trim($page->baseUrl, '/') . '/assets/files/newsletters/' . $file . '.pdf';
-@endphp
+@props(['href', 'img', 'current' => false])
 
 <div class="flex {{ $current ? 'w-full' : 'w-1/4' }} px-2">
-<a href="{{ $file_src }}"><img src="{{ $img_src }}" class="{{ $current ? 'w-80' : 'w-40'  }}"></a>
+<a href="{{ $href }}"><img src="{{ $img }}" class="{{ $current ? 'w-80' : 'w-40'  }}"></a>
 </div>
